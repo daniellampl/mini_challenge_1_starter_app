@@ -12,7 +12,7 @@ class Scenery extends StatefulWidget {
 
 class _SceneryState extends State<Scenery> {
   // You can adjust this, as needed, but it should not change with the theme.
-  final _textAreaHeight = 250.0;
+  final _textAreaHeight = 240.0;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _SceneryState extends State<Scenery> {
             ),
             child: Container(),
           ),
-          //todo(you) - Can you find a way to toggle this text area background color according to the theme?
+          //todo(you) - Can you fin d a way to togglethis text area background color according to the theme?
           Positioned(
             bottom: 0,
             child: Container(

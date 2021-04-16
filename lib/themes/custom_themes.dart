@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mini_challenge_1_theming/themes/colors.dart';
 import 'package:provider/provider.dart';
 
 import 'my_theme.dart';
@@ -19,27 +20,27 @@ class CustomWidgetThemes {
     switch (themeType) {
       case ThemeType.Light:
         sceneryThemeData = SceneryThemeData(
-          skyFillColor: Colors.grey,
-          mountainFillColor: Colors.blueGrey,
-          waterFillColor: Colors.blueGrey[800]!,
+          skyFillColor: LightColors.sky,
+          mountainFillColor: LightColors.mountain,
+          waterFillColor: LightColors.water,
           drawMoon: false,
           drawSun: true,
         );
         break;
       case ThemeType.Dark:
         sceneryThemeData = SceneryThemeData(
-          skyFillColor: Colors.grey,
-          mountainFillColor: Colors.blueGrey,
-          waterFillColor: Colors.blueGrey[800]!,
+          skyFillColor: DarkColors.sky,
+          mountainFillColor: DarkColors.mountain,
+          waterFillColor: DarkColors.water,
           drawMoon: true,
           drawSun: false,
         );
         break;
       case ThemeType.Other:
         sceneryThemeData = SceneryThemeData(
-          skyFillColor: Colors.grey,
-          mountainFillColor: Colors.blueGrey,
-          waterFillColor: Colors.blueGrey[800]!,
+          skyFillColor: OtherColors.sky,
+          mountainFillColor: OtherColors.mountain,
+          waterFillColor: OtherColors.water,
           drawMoon: true,
           drawSun: true,
         );
